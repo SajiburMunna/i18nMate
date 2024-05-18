@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Your go-to solution for internationalization and localization in React applications.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build:dev": "rollup -c --environment NODE_ENV:development",
     "build": "rollup -c --environment NODE_ENV:production"

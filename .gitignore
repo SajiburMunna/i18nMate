@@ -1,2 +1,4 @@
 echo "node_modules/" >> .gitignore
 echo "dist/" >> .gitignore
+i18nmate-1.0.0.tgz
+.DS_Store
