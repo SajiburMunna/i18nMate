@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "ESNext",
-    "jsx": "react",
+    "target": "es5",
+    "module": "esnext",
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
+    "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node" // Ensure module resolution is set to "node"
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "declarationDir": "types"
   },
-  "include": ["src/**/*", "i18nmate.config.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

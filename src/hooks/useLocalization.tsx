@@ -1,12 +1,11 @@
 import { useState } from "react";
 
 import useIsomorphicLayoutEffect from "./useIsomorphicLayoutEffect";
-import { localizationData } from "../LocalizationImportar";
 import { i18nMateConfig } from "../../i18nmate.config";
+import { localizationData } from "../LocalizationImportar/index";
 
-type LanguageCode = string;
 type LocalizationData = { [key: string]: string };
-type LocalizationFiles = { [key in LanguageCode]?: LocalizationData };
+type LocalizationFiles = { [key in string]?: LocalizationData };
 
 const localizedData: { [key: string]: string } = {};
 Object.keys(localizationData).forEach((locale) => {
