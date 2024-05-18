@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node" // Ensure module resolution is set to "node"
+  },
+  "include": ["src/**/*", "i18nmate.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
