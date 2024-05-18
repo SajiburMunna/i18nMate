@@ -1,12 +1,9 @@
 import { i18nMateConfig } from "../../i18nmate.config";
+import { handleImportLocalization } from "../../public/handleImportLocalization";
 
 type LanguageCode = string;
 type LocalizationData = { [key: string]: string };
 type LocalizationFiles = { [key in LanguageCode]?: LocalizationData };
-
-function handleImportLocalization(locale: string, file: string) {
-  return require(`../../public/locales/${locale}/${file}.json`);
-}
 
 export const localizationData: LocalizationFiles = {};
 
